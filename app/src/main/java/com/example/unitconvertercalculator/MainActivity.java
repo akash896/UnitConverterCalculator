@@ -15,19 +15,15 @@ public class MainActivity extends AppCompatActivity {
     private TextView poundOutput;
     private Button convertButton;
 
-    public MainActivity(){
-        kgInput = findViewById(R.id.editTextTextPersonName);
-        poundOutput = findViewById(R.id.textView3);
-        convertButton = findViewById(R.id.button);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MainActivity mainActivity = new MainActivity();
-        mainActivity.convert();
+        kgInput = findViewById(R.id.editTextTextPersonName4);
+        poundOutput = findViewById(R.id.textView7);
+        convertButton = findViewById(R.id.button2);
+        convert();
     }
 
     private void convert() {
